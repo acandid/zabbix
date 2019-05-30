@@ -1,0 +1,18 @@
+---
+- name: configure zabbix.conf
+  template:
+    src: zabbix.conf.j2
+    dest: "{{ web_path }}/zabbix.conf"
+#
+- name: configure zabbix_server.conf
+  template:
+    src: zabbix_server.conf.j2
+    dest: "{{ config_path }}/zabbix_server.conf"
+#
+- name: change permission
+  file:
+    state: directory
+    path: "{{ assets_path }}"
+    group: apache
+    mode: 0775
+    recurse: yes

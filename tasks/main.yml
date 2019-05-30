@@ -1,0 +1,27 @@
+---
+# tasks file for zabbix
+- name: import variables
+  include_vars: "{{ ansible_facts['os_family'] }}.yml"
+#
+- name: import password file variable
+  include_vars: password.yml
+#
+- name: import install repository
+  import_tasks: install_repo.yml
+  tags: rep
+#
+- name: install zabbix server
+  import_tasks: install_packages.yml
+  tags: zbb
+#
+- name: configuretion zabbix server
+  import_tasks: config_zabbix.yml
+  tags: zbb
+#
+- name: start and enable services
+  import_tasks: start_services.yml
+  tags: zbb
+#
+- name: database configuration
+  import_tasks: config_database.yml
+  tags: db

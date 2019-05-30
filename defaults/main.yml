@@ -1,0 +1,11 @@
+---
+# defaults file for zabbix
+#
+# Configure your timezone, verify timezone in https://www.php.net/manual/en/timezones.php
+your_timezone: "America/Sao_Paulo"
+#
+#Inform zabbix database name
+zabbix_db: zabbix
+#
+# Assets cache directory permissions
+assets_path: /usr/share/zabbix

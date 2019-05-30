@@ -1,0 +1,10 @@
+---
+- name: start services
+  service:
+    name: "{{ item }}"
+    state: started
+    enabled: true
+  loop:
+    - "{{ srv_zabbix }}"
+    - "{{ srv_web }}"
+    - "{{ srv_db }}"

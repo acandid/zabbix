@@ -1,0 +1,5 @@
+---
+- name: install packages {{ pkg }}
+  package:
+    name: "{{ pkg }}"
+    state: present

@@ -1,0 +1,14 @@
+---
+- name: Install the repository zabbix 4.2
+  yum:
+    name: "{{ repo }}"
+    state: present
+#
+- name: install MariaDB 10.3 repository
+  yum_repository:
+    name: mariadb
+    description: mariadb 10.3 repository
+    baseurl: "{{ db_repo }}"
+    gpgkey: "{{ key }}"
+    gpgcheck: yes
+    enabled: yes
