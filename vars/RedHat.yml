@@ -6,6 +6,8 @@ key: "https://yum.mariadb.org/RPM-GPG-KEY-MariaDB"
 pkg:
   - zabbix-server-mysql
   - zabbix-web-mysql
+  - zabbix-agent
+  - zabbix-get
   - MariaDB-server
   - MariaDB-client
   - MySQL-python
