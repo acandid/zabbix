@@ -8,3 +8,4 @@
     - "{{ srv_zabbix }}"
     - "{{ srv_web }}"
     - "{{ srv_db }}"
+    - "{{ srv_agent }}"
