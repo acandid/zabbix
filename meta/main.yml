@@ -3,7 +3,7 @@ dependencies: []
 #
 galaxy_info:
   author: acandid
-  description: Install Zabbix 4.2 Server in RedHat and Debian
+  description: Install Zabbix 4.2 Server
   company: "Almir Candido"
   license: "license (BSD, MIT)"
   min_ansible_version: 2.7
@@ -13,10 +13,7 @@ galaxy_info:
         - 7
 #
   galaxy_tags:
-    - database
-    - mysql
-    - mariadb
-    - galera
-    - cluster
+    - zabbix
+    - monitoring
 #
 allow_duplicates: true
