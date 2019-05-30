@@ -18,5 +18,6 @@ web_path: /etc/httpd/conf.d
 srv_zabbix: zabbix-server
 srv_web: httpd
 srv_db: mariadb
+srv_agent: zabbix-agent
 #
 import_schema: "/usr/share/doc/zabbix-server-mysql-4.2.2/create.sql.gz"
