@@ -19,7 +19,7 @@ Role Variables
 None of the variables below are required
 
 | Variable                                     | Default                       | Comments                                                                                |
-| :---                                         | :---                          | :---                                         |                                              |                               |
+| :---                                         | :---                          | :---                                         
 | `zabbix_password`                            |                               | zabbix user password
 |                                              |                               |
 | `zabbix_user`				                         |                               | zabbix user, default is zabbix
