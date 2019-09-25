@@ -19,16 +19,17 @@ Role Variables
 None of the variables below are required
 
 | Variable                                     | Default                       | Comments                                                                                |
-| :---                                         | :---                          | :---                                                                                    |
+| :---                                         | :---                          | :---                                         |                                              |                               |
 | `zabbix_password`                            |                               | zabbix user password
-|
-| `zabbix_user`				       |                               | zabbix user, default is zabbix
-|
+|                                              |                               |
+| `zabbix_user`				                         |                               | zabbix user, default is zabbix
+|                                              |                               |
 | `your_timezone`                              |                               | configure your Timezone.
-|
-| `root_login`                                 |                               | user root                                                                               |
-| `root_password`                              |                               | root password                                                                           |
-| `zabbix_db`				       |			       | Database name, default is zabbix
+|                                              |                               |
+| `root_login`                                 |                               | user root                                   |                                              |                               |
+| `root_password`                              |                               | root password                               |                                              |                               |
+| `zabbix_db`				                           |			                         | Database name, default is zabbix
+|                                              |                               | 
 
 Verify timezone in https://www.php.net/manual/en/timezones.php
 
